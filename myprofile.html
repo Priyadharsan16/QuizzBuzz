@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles2.css" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>Dashboard</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name">QuizBuzz</span>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">QuizBuzz</span>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="lists">
+
+          <li class="list">
+            <a href="C:\Users\sripr\Desktop\Quiz Application with Timer\myprofile.html" class="nav-link">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-bell icon"></i>
+              <span class="link">Notifications</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Messages</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="link">My Performance</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-palette icon"></i>
+              <span class="link">Personalization</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="login page.html" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="overlay"></section>
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Single Player</li>
+      <li class="grey">Test your knowledge with our personalized questions</li>
+      <li class="grey"><a class="button" href="C:\Users\sripr\Desktop\Quiz Application with Timer\index.html">Start Quiz</a></li>
+    </ul>
+  </div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Multi Player</li>
+      <li class="grey">Challenge your friends for a duel for the glory of wits </li>
+      <li class="grey"><a class="button" href="C:\Users\sripr\Desktop\Quiz Application with Timer\index.html">Start Quiz</a></li>
+    </ul>
+  </div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Create Quiz</li>
+      <li class="grey">Set your own customized questions and let others attend</li>
+
+
+      <li class="grey"><a href="C:\Users\sripr\Desktop\Quiz Application with Timer\createquiz.html" class="button">Create</a></li>
+    </ul>
+  </div>
+  <div class="bottom-container">
+    <center>
+      <h3 class="big-heading">Explore and enrich your knowledge.</h3><br>
+    </center>
+
+<!-- Footer -->
+
+<footer class="white-section" id="footer">
+  <center>
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2022 QuizBuzz</p>
+    </div>
+  </center>
+  </div>
+
+
+
+  </footer>
+  <script>
+    const navBar = document.querySelector("nav"),
+      menuBtns = document.querySelectorAll(".menu-icon"),
+      overlay = document.querySelector(".overlay");
+
+    menuBtns.forEach((menuBtn) => {
+      menuBtn.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    });
+
+    overlay.addEventListener("click", () => {
+      navBar.classList.remove("open");
+    });
+  </script>
+</body>
+
+</html>
